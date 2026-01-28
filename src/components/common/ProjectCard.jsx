@@ -2,12 +2,21 @@ import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
 import foodiesImg from "../../assets/projects/foodies2.png";
+import tictactoeImg from "../../assets/projects/tictactoe1.png";
+import todolistImg from "../../assets/projects/todolist1.png";
+import snapgramImg from "../../assets/projects/snapgram1.png";
+import nextnewsImg from "../../assets/projects/nextnews1.png";
+import netflixImg from "../../assets/projects/netflix1.png";
 
 const ProjectCard = ({ p }) => {
 
   const imageMap = {
     foodies: foodiesImg,
-    // ...
+    tictactoe: tictactoeImg,
+    todolist: todolistImg,
+    snapgram: snapgramImg,
+    nextnews: nextnewsImg,
+    netflix: netflixImg,
   };
 
   return (
