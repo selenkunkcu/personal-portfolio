@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import MobileBottomNav from "./components/MobileBottomNav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -7,13 +8,18 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import useActiveSection from "./hooks/useActiveSection";
+import { navItems } from "./data/content";
 
 function App() {
-  return (
-    <div className="bg-background-light text-text-main">
-      <Navbar />
+  const activeSection = useActiveSection(navItems);
 
-      <main>
+  return (
+    <div className="bg-background-light text-text-main overflow-y-hidden">
+      <Navbar activeSection={activeSection} />
+      <MobileBottomNav activeSection={activeSection} />
+
+      <main className="pb-20 md:pb-0">
          <section  id="home"  className="min-h-[100svh] flex items-center scroll-mt-22">
           <div className="mx-auto w-full max-w-6xl px-4">
             <Hero />
