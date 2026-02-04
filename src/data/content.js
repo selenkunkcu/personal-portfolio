@@ -107,17 +107,17 @@ export const skillsContent = {
 
 export const projects = [
     {
-        title: "Wedding Asisstant",
-        desc: "Wedding planner with default tasks, budget tracker, guest list manager, and vendor organizer to streamline wedding preparations.",
-        tags: ["React", "Firebase", "Tailwind"],
-        imageKey: "wedding",
+        title: "Weddie (in progress)",
+        desc: "Wedding assistant with default tasks, budget tracker, guest list manager, and list of needs for easy planning",
+        tags: ["Next", "Firebase", "TypeScript", "Tailwind"],
+        imageKey: "weddie",
         // liveUrl: "#",
-        sourceUrl: "https://github.com/selenkunkcu",
+        sourceUrl: "https://github.com/selenkunkcu/weddie-web",
     },
     {
         title: "Netflix Clone",
         desc: "Mobile-friendly streaming interface inspired by Netflix, including core flows like sign-in, profile selection, and managing a personal favorites list.",
-        tags: ["Next.js", "TypeScript", "Tailwind", "NextAuth", "Prisma", "MongoDB"],
+        tags: ["Next", "TypeScript", "Tailwind", "NextAuth", "Prisma", "MongoDB"],
         imageKey: "netflix",
         // liveUrl: "#",
         sourceUrl: "https://github.com/selenkunkcu/netflix-clone",
@@ -125,7 +125,7 @@ export const projects = [
     {
         title: "NextNews",
         desc: "A compact news site showcasing Next.js App Router patterns—route groups, dynamic [slug] pages, and intercepting/parallel routes with a clean, responsive UI.",
-        tags: ["Next.js", "React", "App Router"],
+        tags: ["Next", "App Router"],
         imageKey: "nextnews",
         // liveUrl: "#",
         sourceUrl: "https://github.com/selenkunkcu/nextnews",
@@ -141,7 +141,7 @@ export const projects = [
     {
         title: "Foodies",
         desc: "Add, discover and share recipes. App Router based fundamentals application that demonstrates the core concepts and modern features of Next.js.",
-        tags: ["Next.js", "CSS Modules", "SQLite"],
+        tags: ["Next", "CSS Modules", "SQLite"],
         imageKey: "foodies",
         // liveUrl: "#",
         sourceUrl: "https://github.com/selenkunkcu/foodies",
@@ -149,7 +149,7 @@ export const projects = [
     {
         title: "Tic-Tac-Toe Game",
         desc: "Two-player Tic-Tac-Toe game with dynamic player management and game state tracking. Built with React to demonstrate component composition, state management, and game logic implementation",
-        tags: ["React", "Vite", "CSS"],
+        tags: ["Vite", "CSS"],
         imageKey: "tictactoe",
         // liveUrl: "#",
         sourceUrl: "https://github.com/selenkunkcu/tic-tac-toe",
@@ -157,7 +157,7 @@ export const projects = [
     {
         title: "To Do List",
         desc: "Interactive todo application with task creation, deletion, and completion tracking.",
-        tags: ["React", "Vite", "CSS"],
+        tags: ["Vite", "CSS"],
         imageKey: "todolist",
         // liveUrl: "#",
         sourceUrl: "https://github.com/selenkunkcu/react-todo-app",

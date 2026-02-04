@@ -37,24 +37,30 @@ const Hero = () => {
             </h1>
 
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-text-muted md:mx-0 md:text-lg">
-                I craft high-performance, user-focused web applications. 
-                <br/>
+                I craft high-performance, user-focused web applications.{" "}
+                <br className="hidden sm:block"/>
                 Let’s build something meaningful together.
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-            <a href="#projects" className="flex h-12 items-center justify-center gap-2 rounded-lg bg-primary px-8 text-base font-semibold text-white shadow-lg shadow-primary/25 transition hover:bg-violet-700">
-                <span>View Projects</span>
-                <FiArrowDown className="text-[18px]" />
+          <div className="flex flex-nowrap justify-center gap-2 md:gap-4 md:justify-start">
+            <a
+              href="#projects"
+              className="flex h-10 md:h-12 min-w-0 items-center justify-center gap-2 rounded-lg bg-primary px-4 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition hover:bg-violet-700 sm:h-12 sm:px-8 sm:text-base"
+            >
+              <span className="truncate">View Projects</span>
+              <FiArrowDown className="text-[16px] sm:text-[18px]" />
             </a>
 
-            <a href="/selen-gokbel-resume.pdf" download className="flex h-12 items-center justify-center gap-2 rounded-lg border border-[#e7ebf3] bg-white px-8 text-base font-semibold text-text-main shadow-sm transition hover:bg-gray-50">
-              <span>Download CV</span>
-              <FiDownload className="text-[18px]" />
+            <a
+              href="/selen-gokbel-resume.pdf"
+              download
+              className="flex h-10 md:h-12 min-w-0 items-center justify-center gap-2 rounded-lg border border-[#e7ebf3] bg-white px-4 text-sm font-semibold text-text-main shadow-sm transition hover:bg-gray-50 sm:h-12 sm:px-8 sm:text-base"
+            >
+              <span className="truncate">Download CV</span>
+              <FiDownload className="text-[16px] sm:text-[18px]" />
             </a>
-          </div>
-
+          </div> 
 
           <div className="mt-6 border-t border-[#e7ebf3] pt-6">
             <div className="flex flex-col items-center gap-4 md:flex-row md:items-start">

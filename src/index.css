@@ -6,4 +6,8 @@
     body {
         @apply bg-background-light text-text-main font-display antialiased;
     }
+    html,
+    body {
+        @apply overflow-x-hidden;
+    }
 }

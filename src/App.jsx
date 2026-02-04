@@ -39,20 +39,20 @@ function App() {
         </section> 
 
 
-        <section  id="skills"  className="min-h-[100svh] flex items-center scroll-mt-22 pt-12">
+        <section  id="skills"  className="min-h-[100svh] flex items-center scroll-mt-22 pt-8 md:pt-12">
           <div className="mx-auto w-full max-w-6xl px-4">
             <Skills />
           </div>
         </section> 
 
-        <section  id="projects"  className="min-h-[100svh] flex items-center scroll-mt-22 pt-12">
+        <section  id="projects"  className="min-h-[100svh] flex items-center scroll-mt-22 md:pt-12">
           <div className="mx-auto w-full max-w-6xl px-4">
             <Projects />
           </div>
         </section>
     
 
-        <section  id="contact"className="min-h-[100svh] flex items-center scroll-mt-22 pt-12">
+        <section  id="contact"className="min-h-[100svh] flex items-center scroll-mt-22 md:pt-12">
           <div className="mx-auto w-full max-w-6xl px-4">
             <Contact />
           </div>

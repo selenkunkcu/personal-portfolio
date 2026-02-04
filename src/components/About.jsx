@@ -4,16 +4,33 @@ const About = () => {
   return (
     <div className="w-full">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
-        <div className="order-2 flex flex-col gap-8 lg:order-1 lg:col-span-7">
+        <div className="order-2 flex flex-col gap-4 md:gap-8 lg:order-1 lg:col-span-7">
           <div className="space-y-4">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-primary">
-              <span className="h-2 w-2 rounded-full bg-primary" />
-              Who am I
+
+          <div className="flex items-end justify-between">
+
+            <div>
+              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+                <span className="h-2 w-2 rounded-full bg-primary" />
+                Who am I
+              </div>
+
+              <h2 className="text-3xl font-extrabold tracking-tight text-text-main md:text-4xl mt-2">
+                About Me
+              </h2>
             </div>
 
-            <h2 className="text-3xl font-extrabold tracking-tight text-text-main md:text-4xl">
-              About Me
-            </h2>
+          <div className="md:hidden relative aspect-square w-[40%] max-w-[260px] ml-4">
+
+            <div className="absolute -top-4 -right-4 h-full w-full rounded-3xl bg-primary/10 -z-10" />
+            <div className="absolute -bottom-4 -left-4 h-full w-full rounded-3xl border-2 border-primary/20 -z-10" />
+            <div
+              className="h-full w-full rounded-2xl bg-cover bg-center shadow-xl grayscale transition-all duration-500 ease-in-out hover:grayscale-0"
+              style={{backgroundImage:"url('images/profile.png')",}}
+              aria-label="Developer portrait"
+            />
+          </div>
+</div>
  
             <div className="space-y-4 text-base leading-relaxed text-text-muted md:text-lg">
               <p>
@@ -27,7 +44,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="mt-4 grid grid-cols-1 gap-6 border-t border-[#e5e7eb] pt-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-6 border-t border-[#e5e7eb] pt-6">
 
             <div className="flex flex-col gap-2">
               <div className="mb-1 flex items-center gap-2 text-primary">
@@ -49,7 +66,7 @@ const About = () => {
               <p className="font-medium text-text-main">Remote / Hybrid</p>
             </div>
 
-            <div className="flex flex-col gap-2 sm:col-span-2 md:col-span-1">
+            <div className="flex flex-col gap-2 col-span-2 md:col-span-1">
               <div className="mb-1 flex items-center gap-2 text-primary">
                 <FiHeart className="text-lg" />
                 <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
@@ -62,7 +79,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="pt-4">
+          <div className="hidden md:block pt-4">
             <a href="#contact" className="group inline-flex items-center gap-2 text-sm font-semibold text-text-main transition-colors hover:text-primary cursor-pointer">
               <span>Get in touch</span>
               <FiArrowRight className="transition-transform group-hover:translate-x-1" />
@@ -71,8 +88,8 @@ const About = () => {
         </div>
 
 
-        <div className="order-1 flex justify-center lg:order-2 lg:col-span-5 lg:justify-end">
-          <div className="relative aspect-square w-full max-w-md">
+       <div className=" hidden md:flex order-1 justify-center lg:order-2 lg:col-span-5 lg:justify-end">
+          <div className="relative aspect-square w-[40%] max-w-[260px] md:w-full md:max-w-md">
 
             <div className="absolute -top-4 -right-4 h-full w-full rounded-3xl bg-primary/10 -z-10" />
             <div className="absolute -bottom-4 -left-4 h-full w-full rounded-3xl border-2 border-primary/20 -z-10" />
@@ -83,6 +100,8 @@ const About = () => {
             />
           </div>
         </div>
+
+
       </div>
     </div>
   );

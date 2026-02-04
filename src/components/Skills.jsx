@@ -117,7 +117,7 @@ const Skills = () => {
             <h3 className="text-2xl font-bold tracking-tight text-text-main">Frontend</h3>
           </div>
 
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
             {frontendSkills.map((it) => (
               <SkillCard key={it.name} name={it.name} icon={it.icon} />
             ))}
@@ -132,7 +132,7 @@ const Skills = () => {
             <h3 className="text-2xl font-bold tracking-tight text-text-main">Backend & Tools</h3>
           </div>
 
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
             {backendTools.map((it) => (
               <SkillCard key={it.name} name={it.name} icon={it.icon} />
             ))}

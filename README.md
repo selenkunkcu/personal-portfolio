@@ -1,16 +1,65 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, modern personal portfolio built with React and Vite. It’s a single‑page site with smooth section transitions, active section highlighting, and a responsive UI that stays sharp across screen sizes.
 
-Currently, two official plugins are available:
+## What’s Inside
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- One‑page layout: Home, About, Experience, Skills, Projects, Contact.
+- Active section tracking with `IntersectionObserver`.
+- Top nav on desktop, bottom nav on mobile.
+- Skills section with an horizontal carousel for services.
+- Tailwind CSS for a fast, consistent design system.
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- Tailwind CSS
+- React Icons
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+You’ll need Node.js installed.
+
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Preview
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+Key files and folders:
+
+- `src/App.jsx`: Page layout and section order.
+- `src/data/content.js`: Navigation, experience, skills, projects data.
+- `src/components/`: Section components and shared UI pieces.
+- `src/hooks/useActiveSection.js`: Active section logic.
+- `src/assets/`: Images and static assets.
+
+## Updating Content
+
+Edit your info in:
+
+- `src/data/content.js`
+
+That’s where projects, experience, and skills live. Put any images in `src/assets/` and reference them in your components.
+
+## License
+
+This project was created for personal use. Add or update a license here if needed.

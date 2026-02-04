@@ -1,4 +1,4 @@
-import { FiBriefcase, FiCode, FiArrowRight } from "react-icons/fi";
+import { FiBriefcase, FiCode } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa6";
 
 import { timelineItems } from "../data/content";
@@ -12,7 +12,7 @@ const Experience = () => {
 
   return (
     <div className="w-full">
-      <div className="mb-8">
+      <div className="mb-4 mt-8 md:mb-8 md:mt-0">
         <h2 className="text-3xl font-bold leading-tight tracking-tight text-text-main md:text-4xl">
           Experience & Education
         </h2>
@@ -29,7 +29,7 @@ const Experience = () => {
             return (
               <div
                 key={item.title}
-                className={`group relative grid grid-cols-[40px_1fr] gap-x-6 ${ isLast ? "pb-2" : "pb-10"}`}
+                className={`group relative grid grid-cols-[40px_1fr] gap-x-2 md:gap-x-6 ${ isLast ? "pb-2" : "pb-10"}`}
               >
                 <div className="relative z-10 flex flex-col items-center pt-1">
                   <div
@@ -51,7 +51,7 @@ const Experience = () => {
                     </h3>
                     <span
                       className={[
-                        "inline-flex items-center rounded-full px-3 py-0.5 text-xs font-medium",
+                        "hidden md:inline-flex items-center rounded-full px-3 py-0.5 text-xs font-medium",
                          item.highlight ? "bg-primary/10 text-primary" : "bg-slate-100 text-text-muted"].join(" ")
                         }
                     >
@@ -59,10 +59,20 @@ const Experience = () => {
                     </span>
                   </div>
 
-                  <p className="mb-3 text-sm font-medium text-text-muted">
-                    {item.company}
-                  </p>
-
+                  <div className="flex items-center mb-3">
+                    <p className="text-sm font-medium text-text-muted mr-3 md:mr-0">
+                      {item.company}
+                    </p>
+                    <span
+                        className={[
+                          "inline-flex md:hidden items-center rounded-full px-3 py-0.5 text-xs font-medium",
+                          item.highlight ? "bg-primary/10 text-primary" : "bg-slate-100 text-text-muted"].join(" ")
+                          }
+                      >
+                        {item.period}
+                      </span>
+                  </div>
+                  
                   {item.bullets?.[0]?.project  ?
                     <ul className="ml-4 list-outside list-disc space-y-1.5 text-sm leading-relaxed font-medium">
                       {item.bullets.map((bullet) => (

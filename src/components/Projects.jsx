@@ -9,7 +9,7 @@ const Projects = () => {
         <h2 className="text-3xl font-extrabold tracking-tight text-text-main md:text-4xl">
           Featured Projects
         </h2>
-        <p className="mx-auto mt-1 max-w-2xl text-text-muted">
+        <p className="hidden md:block mx-auto mt-1 max-w-2xl text-text-muted">
           A selection of projects demonstrating my focus on performance and UI/UX details.
         </p>
       </div>

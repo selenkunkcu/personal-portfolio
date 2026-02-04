@@ -30,21 +30,20 @@ const Contact = () => {
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-16">
 
-        <div className="lg:col-span-5 flex flex-col justify-center space-y-10">
+        <div className="lg:col-span-5 flex flex-col justify-center space-y-4 md:space-y-10">
           
-          <div className="space-y-6">
+          <div className="space-y-2 md:space-y-6">
             <h2 className="text-4xl font-bold tracking-tight text-text-main md:text-5xl">
               Contact
             </h2>
-            <p className="text-lg leading-relaxed text-text-muted md:text-xl">
+            <p className="text-xs md:text-xl leading-relaxed text-text-muted">
               I'm open to new projects, freelance work, and job opportunities. You can contact me by filling out the form.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-4">
-
             <a
               href="https://www.linkedin.com/in/selenkunkcu/" target="_blank" rel="noreferrer" 
               className="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm transition-all hover:border-primary hover:text-primary"
@@ -72,11 +71,11 @@ const Contact = () => {
 
 
         <div className="lg:col-span-7">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
+          <div className="rounded-2xl border border-slate-200 bg-white p-3 md:p-6 shadow-sm">
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
 
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-3 md:gap-6 md:grid-cols-2">
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-semibold text-text-main"> Name </span>
                   <input
@@ -84,7 +83,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Your Name"
                     required
-                    className="h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
+                    className="h-10 md:h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
                   />
                 </label>
 
@@ -95,7 +94,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Your Email Address"
                     required
-                    className="h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
+                    className="h-10 md:h-12 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
                   />
                 </label>
               </div>
@@ -106,15 +105,15 @@ const Contact = () => {
                   name="message"
                   placeholder="Write your message here..."
                   required
-                  className="min-h-[160px] w-full resize-y rounded-lg border border-slate-200 bg-slate-50 p-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
+                  className="min-h-[20vh] md:min-h-[160px] w-full resize-y rounded-lg border border-slate-200 bg-slate-50 p-4 text-text-main placeholder-slate-400 transition-colors focus:border-primary focus:ring-2 focus:ring-primary/25"
                 />
               </label>
 
-              <div className="pt-2">
+              <div className="md:pt-2">
                 <button
                   type="submit"
                   disabled={loading}
-                  className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 font-semibold text-white transition-all hover:bg-violet-700 hover:shadow-lg hover:shadow-primary/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/25 md:w-auto"
+                  className="group inline-flex h-9 md:h-12 w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 font-semibold text-white transition-all hover:bg-violet-700 hover:shadow-lg hover:shadow-primary/25 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/25 md:w-auto"
                 >
                   {loading ? "Sending..." : "Send Message"}
                   <FiSend className="text-[18px] transition-transform group-hover:translate-x-1" />

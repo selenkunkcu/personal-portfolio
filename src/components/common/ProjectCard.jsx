@@ -7,6 +7,7 @@ import todolistImg from "../../assets/projects/todolist1.png";
 import snapgramImg from "../../assets/projects/snapgram1.png";
 import nextnewsImg from "../../assets/projects/nextnews1.png";
 import netflixImg from "../../assets/projects/netflix1.png";
+import weddieImg from "../../assets/projects/weddie1.png";
 
 const ProjectCard = ({ p }) => {
 
@@ -17,11 +18,12 @@ const ProjectCard = ({ p }) => {
     snapgram: snapgramImg,
     nextnews: nextnewsImg,
     netflix: netflixImg,
+    weddie: weddieImg,
   };
 
   return (
     <div className="group flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-primary/40 hover:shadow-md md:flex-row">
-      {/* image */}
+  
       <div className="relative h-44 w-full shrink-0 overflow-hidden rounded-xl bg-slate-100 md:h-28 md:w-64">
 
         <img
@@ -32,7 +34,7 @@ const ProjectCard = ({ p }) => {
         />
       </div>
 
-      {/* content */}
+    
       <div className="flex flex-1 flex-col justify-between gap-3">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
