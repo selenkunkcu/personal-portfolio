@@ -7,20 +7,20 @@ const About = () => {
         <div className="order-2 flex flex-col gap-4 md:gap-8 lg:order-1 lg:col-span-7">
           <div className="space-y-4">
 
-          <div className="flex items-end justify-between">
+          <div className="flex items-end justify-between gap-3">
 
-            <div>
+            <div className="min-w-0 flex-1">
               <div className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-primary">
                 <span className="h-2 w-2 rounded-full bg-primary" />
                 Who am I
               </div>
 
-              <h2 className="text-3xl font-extrabold tracking-tight text-text-main md:text-4xl mt-2">
+              <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-text-main md:text-4xl">
                 About Me
               </h2>
             </div>
 
-          <div className="md:hidden relative aspect-square w-[40%] max-w-[260px] ml-4">
+          <div className="relative ml-2 aspect-square w-[38%] max-w-[150px] shrink-0 md:hidden">
 
             <div className="absolute -top-4 -right-4 h-full w-full rounded-3xl bg-primary/10 -z-10" />
             <div className="absolute -bottom-4 -left-4 h-full w-full rounded-3xl border-2 border-primary/20 -z-10" />

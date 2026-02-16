@@ -15,7 +15,7 @@ function App() {
   const activeSection = useActiveSection(navItems);
 
   return (
-    <div className="bg-background-light text-text-main overflow-y-hidden">
+    <div className="bg-background-light text-text-main overflow-x-clip overflow-y-hidden">
       <Navbar activeSection={activeSection} />
       <MobileBottomNav activeSection={activeSection} />
 

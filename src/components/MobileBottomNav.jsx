@@ -13,7 +13,7 @@ const MobileBottomNav = ({ activeSection }) => {
                 className={`flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-[11px] font-medium transition
                   ${activeSection === item.href
                     ? "text-primary"
-                    : "text-text-muted hover:text-primary"
+                    : "text-text-muted"
                   }`}
               >
                 <span

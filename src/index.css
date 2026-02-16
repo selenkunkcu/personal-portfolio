@@ -6,6 +6,9 @@
     body {
         @apply bg-background-light text-text-main font-display antialiased;
     }
+    #root {
+        @apply overflow-x-clip;
+    }
     html,
     body {
         @apply overflow-x-hidden;
