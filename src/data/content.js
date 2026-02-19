@@ -16,16 +16,16 @@ export const timelineItems = [
         highlight: true,
         bullets: [
             {
-                project: "Web-based ERP System",
+                project: "Web based ERP System",
                 items: [
-                    "Developed user-focused, responsive interfaces using JavaScript and jQuery for a web-based ERP application.",
+                    "Developed user focused, responsive interfaces using JavaScript and jQuery for a ERP web application.",
                     "Integrated frontend modules with a Node.js backend to support core business workflows.",
                     "Designed and optimized PostgreSQL SQL queries and functions powering frontend data and reports. Acted as a bridge between the database, backend services, and client-side UI to improve performance and usability.",
                 ],
             },
             {
                 project: "Smart Cash Register Management System",
-                items: ["Built the frontend layer of a Python-based next-generation smart cash register management platform. Improved usability by performing UI design and interaction optimizations.", "Contributed to building RESTful APIs using MVC architecture with a Python Flask backend. Developed integrations to exchange data between physical cash registers and external web services."],
+                items: ["Built the frontend layer of a Python based next generation smart cash register management platform. Improved usability by performing UI design and interaction optimizations.", "Contributed to building RESTful APIs using MVC architecture with a Python Flask backend. Developed integrations to exchange data between physical cash registers and external web services."],
             },
         ],
     },
@@ -43,7 +43,7 @@ export const timelineItems = [
         period: "2015 – 2021",
         iconKey: "FaGraduationCap",
         highlight: false,
-        bullets: ["GPA: 2.72"],
+        bullets: [],
     },
 ];
 
@@ -56,7 +56,7 @@ export const skillsContent = {
         },
         {
             title: "Responsive Layouts",
-            desc: "Mobile-first layouts that adapt cleanly across breakpoints.",
+            desc: "Mobile first layouts that adapt cleanly across breakpoints.",
             iconKey: "smartphone",
         },
         {
@@ -116,7 +116,7 @@ export const projects = [
     },
     {
         title: "Netflix Clone",
-        desc: "Mobile-friendly streaming interface inspired by Netflix, including core flows like sign-in, profile selection, and managing a personal favorites list.",
+        desc: "Mobile friendly streaming interface inspired by Netflix, including core flows like sign-in, profile selection, and managing a personal favorites list.",
         tags: ["Next", "TypeScript", "Tailwind", "NextAuth", "Prisma", "MongoDB"],
         imageKey: "netflix",
         // liveUrl: "#",
@@ -124,7 +124,7 @@ export const projects = [
     },
     {
         title: "NextNews",
-        desc: "A compact news site showcasing Next.js App Router patterns—route groups, dynamic [slug] pages, and intercepting/parallel routes with a clean, responsive UI.",
+        desc: "A compact news site showcasing Next.js App Router patterns route groups, dynamic [slug] pages, and intercepting/parallel routes with a clean, responsive UI.",
         tags: ["Next", "App Router"],
         imageKey: "nextnews",
         // liveUrl: "#",
