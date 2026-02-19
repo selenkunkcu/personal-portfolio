@@ -30,7 +30,7 @@ export const timelineItems = [
         ],
     },
     {
-        title: "Software Specialist Trianing",
+        title: "Software Specialist Training",
         company: "Neos Academy",
         period: "2023",
         iconKey: "FiCode",
@@ -61,7 +61,7 @@ export const skillsContent = {
         },
         {
             title: "Maintainability",
-            desc: "Designing readable and maintainable frontend architectures for long-term projects.",
+            desc: "Designing readable and maintainable frontend architectures for long term projects.",
             iconKey: "shield",
         },
         {
@@ -148,7 +148,7 @@ export const projects = [
     },
     {
         title: "Tic-Tac-Toe Game",
-        desc: "Two-player Tic-Tac-Toe game with dynamic player management and game state tracking. Built with React to demonstrate component composition, state management, and game logic implementation",
+        desc: "Two player Tic-Tac-Toe game with dynamic player management and game state tracking. Built with React to demonstrate component composition, state management, and game logic implementation",
         tags: ["Vite", "CSS"],
         imageKey: "tictactoe",
         // liveUrl: "#",

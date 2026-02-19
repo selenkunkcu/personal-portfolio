@@ -37,7 +37,7 @@ const Hero = () => {
             </h1>
 
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-text-muted md:mx-0 md:text-lg">
-                I craft high-performance, user-focused web applications.{" "}
+                I craft high performance, user-focused web applications.{" "}
                 <br className="hidden sm:block"/>
                 Let’s build something meaningful together.
             </p>

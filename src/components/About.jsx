@@ -34,12 +34,12 @@ const About = () => {
  
             <div className="space-y-4 text-base leading-relaxed text-text-muted md:text-lg">
               <p>
-                I’m a frontend-focused software engineer who enjoys building clean, scalable, and easy-to-maintain interfaces for modern web applications. 
+                I’m a frontend-focused software engineer who enjoys building clean, scalable, and easy to maintain interfaces for modern web applications. 
                 I like working at the point where design meets engineering and turning ideas into products people actually enjoy using.
               </p>
               <p>
                 I care a lot about component structure, performance, and writing code that’s easy to understand and improve later. 
-                In my projects, I try to keep things simple, predictable, and well organized — both in the UI and in the codebase.
+                In my projects, I try to keep things simple, predictable, and well organized both in the UI and in the codebase.
               </p>
             </div>
           </div>
